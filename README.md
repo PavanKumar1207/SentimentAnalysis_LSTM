@@ -71,6 +71,7 @@ The trained model is saved as `sentiment_model.h5` for deployment.
 ## Understanding LSTM
 
 LSTM (Long Short-Term Memory) networks are a type of Recurrent Neural Network (RNN) that excel in handling sequential data by maintaining long-term dependencies. This makes them particularly effective for tasks like sentiment analysis.
+
 ![image](https://github.com/user-attachments/assets/3084e19f-b160-4b6a-b76e-585c8ca7140e)
 
 ### Key Components of LSTMs:
