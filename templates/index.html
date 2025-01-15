@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Sentiment Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('static/bg_1.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            text-shadow: 1px 1px 2px #000000;
+        }
+        .card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn-primary {
+            background-color: #ff6347;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #e5533d;
+        }
+        textarea {
+            resize: none;
+        }
+        .instruction-text {
+            color: #FFD700; /* Gold color for better visibility */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card p-4">
+            <div class="text-center">
+                <h1 class="mb-3">Restaurant Sentiment Analysis</h1>
+                <p class="instruction-text">Enter a review below to determine its sentiment.</p>
+            </div>
+            <form method="POST" action="/" class="mt-3">
+                <div class="mb-4">
+                    <textarea class="form-control" name="review" rows="5" placeholder="Write your review here..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg w-100">Analyze Sentiment</button>
+            </form>
+            {% if result %}
+            <div class="alert alert-info text-center mt-4">
+                <h4><strong>Sentiment:</strong> {{ result }}</h4>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
