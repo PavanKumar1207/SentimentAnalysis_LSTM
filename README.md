@@ -98,8 +98,6 @@ Ensure you have the following installed:
 sentiment-analysis-lstm/
 │
 ├── app.py               # Flask application
-├── glove.6B.200d.txt         # GloVe embeddings (200d)
-├── glove.6B.100d.txt         # GloVe embeddings (100d)
 ├── preprocess.py           # Preprocessing utilities
 ├── Reviews.csv             # Dataset used to train
 ├── tokenizer.pkl           # Tokenizer for input text
