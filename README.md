@@ -11,6 +11,7 @@ This project demonstrates a sentiment analysis system for restaurant reviews, bu
 - [Technologies Used](#technologies-used)
 - [Dataset](#dataset)
 - [Model Training](#model-training)
+- [Understanding LSTM](#understanding-lstm)
 - [How to Run the Application](#how-to-run-the-application)
 - [Folder Structure](#folder-structure)
 - [Contributing](#contributing)
@@ -67,7 +68,24 @@ The model was trained on a dataset of restaurant reviews. The dataset was prepro
 The trained model is saved as `sentiment_model.h5` for deployment.
 
 ---
+## Understanding LSTM
 
+LSTM (Long Short-Term Memory) networks are a type of Recurrent Neural Network (RNN) that excel in handling sequential data by maintaining long-term dependencies. This makes them particularly effective for tasks like sentiment analysis.
+
+### Key Components of LSTMs:
+1. **Cell State**:  
+   Acts as the memory of the LSTM, retaining information over time. It flows through the network, undergoing modifications via gates.
+2. **Gates**:  
+   LSTMs use gates to regulate the flow of information:
+   - **Forget Gate**: Decides what information to discard from the cell state.
+   - **Input Gate**: Updates the cell state with new information.
+   - **Output Gate**: Determines the output and updates the hidden state.
+
+These mechanisms allow LSTMs to capture both short-term and long-term dependencies in text data, making them ideal for sentiment analysis tasks where context matters.
+
+For a more detailed explanation, refer to this excellent blog: [Understanding LSTMs by Christopher Olah](https://colah.github.io/posts/2015-08-Understanding-LSTMs/).
+
+---
 ## How to Run the Application
 
 ### Prerequisites
