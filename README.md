@@ -2,7 +2,8 @@
 
 This project demonstrates a sentiment analysis system for restaurant reviews, built using an LSTM (Long Short-Term Memory) model and GloVe word embeddings (200-dimensional). The project includes a Flask-based web application to provide a user-friendly interface for analyzing the sentiment of textual reviews.
 
-![Demo](https://github.com/user-attachments/assets/ba8879d8-5891-4595-81de-c7aa10d8f408)
+![Screenshot 2025-01-15 145805](https://github.com/user-attachments/assets/ea2745c3-3ab2-4c77-b8e2-95d8036f4705)
+
 
 ## Table of Contents
 - [Overview](#overview)
